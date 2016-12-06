@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>musique</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card ion-item *ngFor="let item of instruments" (click)="itemTapped($event, item)">
+
+  <img src="{{item.picture}}" >
+
+  <div class='card-title'>
+    {{item.title}}
+  </div>
+
+  </ion-card>
+</ion-content>
